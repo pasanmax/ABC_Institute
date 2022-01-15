@@ -47,7 +47,7 @@ class StudentsController extends Controller
             'lname' => ['required','regex:/^[a-zA-Z]+$/'],
             'nic' => 'required|min:10|max:12|unique:students',
             'dob' => 'required',
-            'contactNo' => ['required','regex:/^7{1}(0|1|2|5|6|7|8){1}[0-9]{7}$/'],
+            'contactNo' => ['required','regex:/^07{1}(0|1|2|5|6|7|8){1}[0-9]{7}$/'],
             'gender' => 'required',
             'email' => ['required','unique:students','regex:/^(.+)@(.+)$/']
         ]);
@@ -130,7 +130,7 @@ class StudentsController extends Controller
             'lname' => ['required','regex:/^[a-zA-Z]+$/'],
             'nic' => 'required|min:10|max:12',
             'dob' => 'required',
-            'contactNo' => ['required','regex:/^7{1}(0|1|2|5|6|7|8){1}[0-9]{7}$/'],
+            'contactNo' => ['required','regex:/^07{1}(0|1|2|5|6|7|8){1}[0-9]{7}$/'],
             'gender' => 'required',
             'email' => ['required','regex:/^(.+)@(.+)$/']
         ]);
